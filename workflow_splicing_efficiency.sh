@@ -2,7 +2,7 @@
 
 ## stripts adapted from publication of prevorovski et al (2016)
 
-path_to_species="/sbidata/psieber/AlternativeSplicing/A_fumigatus/"
+path_to_species="/home/psieber/AlternativeSplicing/A_fumigatus/"
 
 genome_fasta="/home/psieber/rnaseq_analysis/A_fumigatus/Aspergillus_fumigatusa1163.CADRE.31.dna.toplevel.fa"
 genome_gtf="/home/psieber/rnaseq_analysis/A_fumigatus/Aspergillus_fumigatusa1163.CADRE.31.gtf"
