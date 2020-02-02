@@ -2,10 +2,10 @@
 
 ## stripts adapted from publication of prevorovski et al (2016)
 
-path_to_species="/home/psieber/AlternativeSplicing/A_fumigatus/"
+path_to_species="/home/AlternativeSplicing/A_fumigatus/"
 
-genome_fasta="/home/psieber/rnaseq_analysis/A_fumigatus/Aspergillus_fumigatusa1163.CADRE.31.dna.toplevel.fa"
-genome_gtf="/home/psieber/rnaseq_analysis/A_fumigatus/Aspergillus_fumigatusa1163.CADRE.31.gtf"
+genome_fasta="/home/rnaseq_analysis/A_fumigatus/Aspergillus_fumigatusa1163.CADRE.31.dna.toplevel.fa"
+genome_gtf="/home/rnaseq_analysis/A_fumigatus/Aspergillus_fumigatusa1163.CADRE.31.gtf"
 
 file_comparisons="${path_to_species}/splicing_efficiency/comparisons.txt"
 
@@ -50,7 +50,7 @@ done
 ############################################################
 # R 
 
-Rscript --vanilla /home/psieber/bin/splicing_efficiency/junctions.R ${regtools_outdir} ${path_to_species}/splicing_efficiency
+Rscript --vanilla /home/bin/splicing_efficiency/junctions.R ${regtools_outdir} ${path_to_species}/splicing_efficiency
 
 
 ############################################################
@@ -88,4 +88,4 @@ mkdir ${path_to_species}/splicing_efficiency/images/
 mkdir ${path_to_species}/splicing_efficiency/efficiency/
 
 ##TODO define comparisons, include into script!!
-Rscript --vanilla /home/psieber/bin/splicing_efficiency/efficiency.R ${path_to_species}/splicing_efficiency ${path_to_species}/splicing_efficiency/BAM_files ${file_comparisons}
+Rscript --vanilla /home/bin/splicing_efficiency/efficiency.R ${path_to_species}/splicing_efficiency ${path_to_species}/splicing_efficiency/BAM_files ${file_comparisons}
